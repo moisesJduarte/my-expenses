@@ -8,7 +8,7 @@ import './Expenses.css';
 const Expense = (props) => {
     const [filteredYear, setFilterYear] = useState('2020');
 
-    const filterChangeHandler = selectedYear => {
+    const filterChangeHandler = (selectedYear) => {
         setFilterYear(selectedYear);
     };
 
@@ -29,6 +29,6 @@ const Expense = (props) => {
             </Card>
         </div>
     );
-}
+};
 
 export default Expense;
